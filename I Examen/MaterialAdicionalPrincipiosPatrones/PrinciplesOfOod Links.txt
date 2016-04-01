@@ -1,0 +1,19 @@
+﻿PrinciplesOfOod Links
+
+
+http://blog.sanaulla.info/2008/06/26/cohesion-and-coupling-two-oo-design-principles/
+
+http://sanaulla.info/2012/02/01/another-aspect-of-coupling-in-object-oriented-paradigm-2/
+
+http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
+(cada principio solid tiene su propio artículo)
+
+https://sites.google.com/site/unclebobconsultingllc/getting-a-solid-start
+
+http://www.genbetadev.com/metodologias-de-programacion/doce-principios-de-diseno-que-todo-desarrollador-deberia-conocer
+
+http://www.genbetadev.com/metodologias-de-programacion/la-navaja-de-occam-kiss-y-yagni-la-simplicidad-en-el-codigo-no-deberia-ser-solo-postureo-developer
+
+http://www.genbetadev.com/paradigmas-de-programacion/solid-cinco-principios-basicos-de-diseno-de-clases
+
+http://www.cvc.uab.es/shared/teach/a21291/temes/object_oriented_design/materials_adicionals/principles_and_patterns.pdf

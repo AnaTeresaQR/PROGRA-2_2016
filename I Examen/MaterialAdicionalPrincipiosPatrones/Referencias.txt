@@ -1,0 +1,15 @@
+Oloruntoba, S. (2015, 03). S.O.L.I.D: The First 5 Principles of Object Oriented Design. Scotch.io. Obtenido 03, 2016, de https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#interface-segregation-principle
+
+Csaba, P. (2014, 01). SOLID: Part 3 - Liskov Substitution & Interface Segregation Principles. envatotuts. Obtenido 03, 2016, de http://code.tutsplus.com//tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710
+
+Csaba, P. (2014, 02). SOLID: Part 4 - The Dependency Inversion Principle. envatotuts. Obtenido 03, 2016, de http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872
+
+Gómez Calcerrada, S. (2014, 10). [S.O.L.I.D.] Liskov substitution. Adisctosaltrabajo. Obtenido 03, 2016, de http://www.adictosaltrabajo.com/tutoriales/solid-3/
+
+Gómez Calcerrada, S. (2014, 10). [S.O.L.I.D.] Dependency inversion principle / Principio de inversión de dependencias. Adisctosaltrabajo. Obtenido 03, 2016, de http://www.adictosaltrabajo.com/tutoriales/solid-5/
+
+Anon, (2012, 05). SOLID principles with real world examples. jgauffin's coding den. Obtenido 03, 2016, de http://blog.gauffin.org/2012/05/11/solid-principles-with-real-world-examples/
+
+Fuchs Cerdeña, J. (2012, 06). SOLID - ¿Cómo lo aplico a mi código?. SlideShare. Obtenido 03, 2016, de http://es.slideshare.net/JuanjoFuchs/solid-cmo-lo-aplico-a-mi-cdigo
+
+Anon, (2016, 01). SOLID Design Principles C#. CsharpStar. Obtenido 03, 2016, de http://www.csharpstar.com/solid-design-principles-c/
