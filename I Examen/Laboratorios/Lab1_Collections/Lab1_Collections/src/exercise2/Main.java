@@ -13,14 +13,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Printer printer = new Printer();
+        PrinterQueue printer = new PrinterQueue();
 
         //int id, String name, Date date, int type
-        Document d1 = createDocument(1, "Doc1", createDate(29, 6, 2010, 13, 56), DocumentPriority.LOCAL.getPriority());
-        Document d2 = createDocument(2, "Doc2", createDate(27, 5, 2011, 8, 25), DocumentPriority.NETWORK.getPriority());
-        Document d3 = createDocument(3, "Doc3", createDate(15, 3, 2013, 10, 45), DocumentPriority.TEST.getPriority());
-        Document d4 = createDocument(4, "Doc4", createDate(8, 2, 2012, 6, 30), DocumentPriority.LOCAL.getPriority());
-        Document d5 = createDocument(5, "Doc5", createDate(4, 9, 2010, 17, 15), DocumentPriority.TEST.getPriority());
+        Document d1 = createDocument( "Doc1", createDate(29, 6, 2010, 13, 56), DocumentPriority.LOCAL.getPriority());
+        Document d2 = createDocument( "Doc2", createDate(27, 5, 2011, 8, 25), DocumentPriority.NETWORK.getPriority());
+        Document d3 = createDocument("Doc3", createDate(15, 3, 2013, 10, 45), DocumentPriority.TEST.getPriority());
+        Document d4 = createDocument("Doc4", createDate(8, 2, 2012, 6, 30), DocumentPriority.LOCAL.getPriority());
+        Document d5 = createDocument("Doc5", createDate(4, 9, 2010, 17, 15), DocumentPriority.TEST.getPriority());
 
         // 1(1)-2(2)-3(3)-4(4)-5(5)
         // 3-5-1-4-2
@@ -32,21 +32,21 @@ public class Main {
         // 3-5-4-1-2
         
         // ADDS DOCUMENTS IN THE QUEUE
-        printer.offerDocument(d1);
-        printer.offerDocument(d2);
-        printer.offerDocument(d3);
-        printer.offerDocument(d4);
-        printer.offerDocument(d5);
+        printer.offer(d1);
+        printer.offer(d2);
+        printer.offer(d3);
+        printer.offer(d4);
+        printer.offer(d5);
 
         for (int i = 0; i < 5; i++) {
-            System.out.println("Imprimiendo : -> " + printer.despatch() + "\n");
+            System.out.println("Imprimiendo : -> " + printer.poll() + "\n");
         }
 
     }
 
-    public static Document createDocument(int id, String name, Date date, int type) {
+    public static Document createDocument( String name, Date date, int type) {
         Document doc;
-        return doc = new Document(id, name, date, type);
+        return doc = new Document(name, date, type);
     }
 
     /**

@@ -1,6 +1,5 @@
 package exercise2;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -12,20 +11,17 @@ import java.util.Date;
 public class Document {
 
     private int id;
-    private int counter; // document counter
+    private static int counter; // document counter
     private String name;
     private Date date;
-    private String hour;
     private int type; // enum with the document type priority 
 
-    public Document(int id, String name, Date date, int type) {
-        this.id = id;
+    public Document(String name, Date date, int type) {
+        this.id = counter;
         this.name = name;
         this.date = date;
         this.type = type;
-        this.counter = 0;
-        hour = new SimpleDateFormat("HH:mm:ss")
-                .format(date); // establishes a specific time format
+        this.counter++;
     }
 
     public int getId() {
@@ -52,10 +48,6 @@ public class Document {
         this.date = date;
     }
 
-    public String getHour() {
-        return hour;
-    }
-
     public int getType() {
         return type;
     }
@@ -66,6 +58,6 @@ public class Document {
 
     @Override
     public String toString() {
-        return counter + "  Document{" + "id: " + id + ", name: " + name + ", date: " + date.toLocaleString() + ", hour: " + hour + ", type: " + type + '}';
+        return "  Document{" + "id: " + id + ", name: " + name + ", date: " + date.toLocaleString() + ", type: " + type + '}';
     }
 }

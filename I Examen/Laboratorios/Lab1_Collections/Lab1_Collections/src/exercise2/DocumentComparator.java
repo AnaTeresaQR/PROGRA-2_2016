@@ -23,15 +23,16 @@ public class DocumentComparator implements Comparator {
         // First: Compare by the type
         int result = (int) (((Document) doc1).getType()
                 - ((Document) doc2).getType());
-        
+
         // If result = 0; we need to order by the counter
         if (result == 0) {
-            return (int) (((Document) doc1).getCounter()
-                    - ((Document) doc2).getCounter());
+            return (int) (((Document) doc1).getId()
+                    - ((Document) doc2).getId());
         } else {
             // If not, return the result
             return result;
         }
+
     }
 
 }

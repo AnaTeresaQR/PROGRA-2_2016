@@ -25,7 +25,6 @@ public class PrinterQueue {
      * @return true if was added, false otherwise
      */
     public boolean offer(Document doc) {
-        doc.setCounter(queue.size());
         return queue.offer(doc);
     }
 

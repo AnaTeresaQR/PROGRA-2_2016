@@ -12,12 +12,16 @@ import java.util.Set;
  */
 public class Sets {
 
-    Set< Integer> set; // set of numbers positive integers
+    private Set< Integer> set; // set of numbers positive integers
 
     public Sets() {
 
         set = new HashSet<>(); // initialize the set of numbers
 
+    }
+
+    public Sets(Set<Integer> set) {
+        this.set = set;
     }
 
     /**
@@ -130,7 +134,4 @@ public class Sets {
         return message;
     }
 
-    public Set<Integer> getSet() {
-        return set;
-    }
 }
