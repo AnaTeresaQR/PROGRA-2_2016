@@ -63,11 +63,11 @@ public class Proyect {
     private String dateList() {
         String text = "";
         if (advanceProyect.size() == 1) {
-            return text += "Fecha de entrega final: " + advanceProyect.toString();
+            return text += "Fecha de entrega final: " + advanceProyect.get(0).toLocaleString();
         } else {
             text += "Fechas de avances de proyectos:  ";
             for (Date advanceProyect1 : advanceProyect) {
-                text += "\n" + advanceProyect1;
+                text += "\n" + advanceProyect1.toLocaleString();
             }
         }
         return text;
@@ -75,7 +75,7 @@ public class Proyect {
 
     @Override
     public String toString() {
-        return "Proyect{" + "nameProyect: " + nameProyect + ", bossP: " + bossP + ", timeWeeks: " + timeWeeks + ", advanceProyect: " + dateList() + '}';
+        return "\nProyect{" + "nameProyect: " + nameProyect + ", bossP: " + bossP + "\nProyect timeWeeks: " + timeWeeks + "\nadvanceProyect: " + dateList() + '}';
     }
 
 }
