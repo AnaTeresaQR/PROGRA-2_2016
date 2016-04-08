@@ -14,6 +14,12 @@ public abstract class Address {
     public static final String EOL_STRING = System.getProperty("line.separator");
     public static final String SPACE = " ";
 
+    public abstract String getCountry();
+
+    public String getFullAddress() {
+        return street + EOL_STRING + city + SPACE + postalCode + EOL_STRING;
+    }
+
     public String getStreet() {
         return street;
     }
@@ -28,12 +34,6 @@ public abstract class Address {
 
     public String getRegion() {
         return region;
-    }
-
-    public abstract String getCountry();
-
-    public String getFullAddress() {
-        return street + EOL_STRING + city + SPACE + postalCode + EOL_STRING;
     }
 
     public void setStreet(String newStreet) {
