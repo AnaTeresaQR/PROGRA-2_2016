@@ -7,14 +7,20 @@ package exercise1;
 public class Main {
 
     public static void main(String[] args) {
-        MatrixManager m = new MatrixManager();
-        m.add_RowColumn(0, 2, new Employee("ATJM", "IntheNight", "123"));
-        m.add_RowColumn(1, 1, new Employee("Juan", "Arias", "123"));
 
-        m.add_EndRow(new Employee("TERE", "Quesada", "123"));
-        m.copyRow(1);
-        System.out.println(m.print());
+        MatrixManagerCopiable mc = new MatrixManagerCopiable();
+        Employee emp1 = new Employee("1", "1", "1");
+        Employee emp2 = new Employee("2", "2", "2");
 
+        mc.addElement(0, emp1);
+        mc.addElement(0, emp2);
+
+        System.out.println("" + mc.print());
+
+        // System.out.println("" + mc.getElement(0, 1));
+        mc.copyRow(0);
+        mc.getElement(1, 0).setName("3");
+        System.out.println("" + mc.print());
     }
 
 }

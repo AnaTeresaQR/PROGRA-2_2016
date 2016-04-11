@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercise1;
 
 /**
  *
  * @author Ana Teresa
  */
-public class Employee implements Cloneable{
+public class Employee implements Cloneable {
 
     private String name;
     private String lastName;
@@ -50,10 +45,10 @@ public class Employee implements Cloneable{
 
     @Override
     public String toString() {
-        return "Employee{" + "name=" + name + ", lastName=" + lastName + ", id=" + id + '}';
+        return "Employee{" + "name: " + name + ", lastName: " + lastName + ", id: " + id + '}';
     }
-    
-    public Object copy(){
+
+    public Object copy() {
         return new Employee(name, lastName, id);
     }
 
