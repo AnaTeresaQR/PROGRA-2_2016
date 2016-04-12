@@ -18,7 +18,9 @@ public class Main {
         Component_Restaurant dish2 = new Dish();
         dish2 = new Beans(dish2);
         dish2 = new Plantain(dish2);
+        dish2 = new Plantain(dish2);
         dish2 = new GrilledChicken(dish2);
+        dish2 = new Salad(dish2);
 
         System.out.println("\nCasado 2\n" + dish2.getDecription() + "\nPrecio = " + dish2.getPrice());
 
