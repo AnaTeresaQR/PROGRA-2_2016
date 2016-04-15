@@ -60,8 +60,13 @@ public class EventsBuilder implements AbstractEventsBuilder {
 
     @Override
     public void createAttendeesAmount(int attendees) throws EventsException {
+        Client client = events.getClient();
         if (attendees >= 0) {
-            events.setAttendeesAmount(attendees);
+            if (client instanceof EducationalInstitution) {
+
+            } else {
+                events.setAttendeesAmount(attendees);
+            }
         } else {
             throw new EventsException("Se requiere que la cantidad de asistentes sea válida");
         }
